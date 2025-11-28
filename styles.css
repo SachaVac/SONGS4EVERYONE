@@ -16,6 +16,18 @@ html, body {
       background-attachment: fixed;
       min-height: 100vh;
     }
+      .navbar {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+          border-bottom: 1px solid #ddd;
+      }
+      
+      .navbar a {
+          margin-left: 20px;
+          color: #222;
+          text-decoration: none;
+      }
   
     .container {
       font-family: sans-serif;
@@ -67,4 +79,5 @@ html, body {
   
     a:active {
       color: #e0630f; 
+
     }
