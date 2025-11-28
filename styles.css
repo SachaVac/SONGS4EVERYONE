@@ -30,7 +30,7 @@
           z-index: 10;
       }
       
-      .navbar b {
+      .navbar a {
           margin-left: 20px;
           color: #222;
           text-decoration: none;
@@ -90,6 +90,23 @@
       color: #e0630f; 
 
     }
+      .navbar a {
+          color: #050505; /* Téměř černá barva */
+          font-weight: 600;
+          text-decoration: none;
+      }
+      
+      /* Zajišťuje, že navštívené odkazy (visited) uvnitř navbaru zůstanou černé */
+      .navbar a:visited {
+          color: #050505; 
+      }
+      
+      /* Nastavte barvu při najetí myší (hover) na jinou, aby uživatel viděl, že je odkaz aktivní */
+      .navbar a:hover {
+          color: #c5b416; /* Příklad: Změní barvu na žlutou při najetí */
+          text-decoration: underline;
+      }
+
 
 
 
