@@ -30,7 +30,7 @@
           z-index: 10;
       }
       
-      .navbar a {
+      .navbar b {
           margin-left: 20px;
           color: #222;
           text-decoration: none;
@@ -90,6 +90,7 @@
       color: #e0630f; 
 
     }
+
 
 
 
