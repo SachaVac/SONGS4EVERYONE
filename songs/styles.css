@@ -11,6 +11,28 @@ body {
   min-height: 100vh;
 }
 
+/* NAVBAR – přes celou šířku */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    position: sticky;  /* optional: přilepený při scrollu */
+    top: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    margin-left: 20px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+}
+
 pre {
   font-family: inherit;
   color: #e7e2e2;
@@ -55,4 +77,20 @@ a:hover {
 
 a:active {
   color: #e0630f;
+}
+.navbar a {
+    color: #050505; /* Téměř černá barva */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Zajišťuje, že navštívené odkazy (visited) uvnitř navbaru zůstanou černé */
+.navbar a:visited {
+    color: #050505; 
+}
+
+/* Nastavte barvu při najetí myší (hover) na jinou, aby uživatel viděl, že je odkaz aktivní */
+.navbar a:hover {
+    color: #c5b416; /* Příklad: Změní barvu na žlutou při najetí */
+    text-decoration: underline;
 }
