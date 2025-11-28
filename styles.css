@@ -1,42 +1,51 @@
-html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-  
-    body {
-      font-family: sans-serif;
-      max-width: 600px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background-image: url('figs/introm.jpeg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-attachment: fixed;
-      min-height: 100vh;
-    }
+      html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+      }
+      
+      /* TADY JE ZMĚNA – odstraněno max-width z body */
+      body {
+          font-family: sans-serif;
+          background-image: url('figs/introm.jpeg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-attachment: fixed;
+          min-height: 100vh;
+      }
+      
+      /* NAVBAR – přes celou šířku */
       .navbar {
+          width: 100%;
           display: flex;
           justify-content: space-between;
-          padding: 20px;
+          padding: 20px 40px;
+          background: rgba(255, 255, 255, 0.85);
+          backdrop-filter: blur(6px);
           border-bottom: 1px solid #ddd;
+          box-sizing: border-box;
+          position: sticky;  /* optional: přilepený při scrollu */
+          top: 0;
+          z-index: 10;
       }
       
       .navbar a {
           margin-left: 20px;
           color: #222;
           text-decoration: none;
+          font-weight: 600;
       }
-  
-    .container {
-      font-family: sans-serif;
-      max-width: 600px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: rgba(255, 255, 255, 0.8); /* poloprůhledné pozadí pod obsahem */
-      border-radius: 16px;
-    }
+      
+      /* OBSAH – nyní se omezuje jen container, ne celé body */
+      .container {
+          max-width: 600px;
+          margin: 2rem auto;
+          padding: 1rem;
+          background: rgba(255, 255, 255, 0.8);
+          border-radius: 16px;
+      }
+
   
     input {
       width: 100%;
@@ -81,3 +90,4 @@ html, body {
       color: #e0630f; 
 
     }
+
