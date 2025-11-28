@@ -39,12 +39,7 @@ body {
     
     /* 2. CENTROVÁNÍ: Nastaví automatický okraj na levé a pravé straně */
     margin: 2rem auto;
-    
-    /* Zde ponechte vaše stávající styly pro vizuální vzhled kontejneru */
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 16px;
-    z-index: 5; /* Zajištění, že se bude zobrazovat nad pozadím */
+
 }
 
 pre {
